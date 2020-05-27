@@ -1,0 +1,76 @@
+#navbar {
+    height: 60px; position: fixed; width: 100%; top:0; left: 0; z-index: 1000; background-color: white;
+}
+
+#appName {
+    width: 15%; 
+    float: left;
+    text-align: center;
+}
+
+#appName h4 {
+    font-weight: 500;
+}
+
+#userName {
+    width: 23%; float: left; text-align: center; margin-left: 2%;
+}
+
+#userName h4 {
+    font-weight: 400;
+}
+
+#search {
+    width: 35%; float: left; margin-left: 3%;
+}
+
+#search-btn {
+    float: left;
+    width: 20%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 30px;
+    padding: 0;
+    font-weight: 500;
+}
+
+#search-input {
+    float: left; 
+    width: 80%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border: 1px solid #ccc;
+    height: 30px;
+}
+
+.patient-detail {
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5); border-radius: 4px;
+}
+
+.patient-name {
+    width: 25%; float: left;
+}
+
+.patient-gender {
+    width: 5%; float: left; text-align: center;
+}
+
+.patient-contact {
+    width: 30%; float: left; text-align: center;
+}
+
+.patient-email {
+    width: 27%; float: left;
+}
+
+.patient-edit {
+    width: 60px; max-width: 60px; margin-right: 10px;
+}
+
+.patient-delete {
+    width: 60px; max-width: 60px; margin-right: 10px;
+}
+
+#logout, #addNew {
+    width: 105px; height: 30px; padding: 0; margin-left: 2.5%; font-weight: 400;
+}

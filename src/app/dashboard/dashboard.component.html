@@ -1,0 +1,27 @@
+<nav id="navbar" class="pt-3 border-bottom">
+    <div id="appName">
+        <h4>{{appName}}</h4>
+    </div>
+    <div id="userName">
+        <h4>Welcome {{userName}}!</h4>
+    </div>
+    <div id="search" >
+        <input id="search-input" type="search" name="search" placeholder="Search..." class="form-control"
+            [(ngModel)]="searchTerm" />
+        <button id="search-btn" class="btn btn-success btn">Search</button>
+    </div>
+    <button id="addNew" class="btn btn-primary" routerLink="/add">Add New</button>
+    <button id="logout" class="btn btn-danger" routerLink="/login">Logout</button>
+</nav>
+<div class="container" style="padding-top: 85px;">
+    <div class="patient-detail row pt-3 pb-3 mb-4 pl-3" 
+        *ngFor="let patient of patients | filter:searchTerm" id="pt{{patient.id}}">
+        <span class="patient-name">{{patient.name}} ({{patient.age}})</span> 
+        <span class="patient-gender text-capitalize">{{patient.gender}}</span> 
+        <span class="patient-contact">{{patient.contact}}</span>
+        <span class="patient-email">{{patient.email}}</span>
+        <button class="btn btn-info btn-sm pull-right patient-edit" (click)="edit(patient.id)">Edit</button>
+        <button class="btn btn-success btn-sm pull-right patient-delete" (click)="delete(patient.id)">Delete</button>
+    </div>
+    
+</div>
